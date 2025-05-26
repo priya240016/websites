@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events - Eventify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/eventlogo.png" alt="Eventify Logo" width="45" height="45" class="me-2">
+                <span class="fw-bold">Event<span class="text-primary">ify</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-lg-3 px-3" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Header -->
+    <header class="events-header py-5 mb-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-4 fw-bold text-white text-center">Browse Our Events</h1>
+                    <p class="lead text-white text-center mb-0">Find and book the perfect event for you</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Events Filter Section -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4">Filter Events</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>All Categories</option>
+                                            <option>Corporate</option>
+                                            <option>Wedding</option>
+                                            <option>Birthday</option>
+                                            <option>Conference</option>
+                                            <option>Festival</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>All Locations</option>
+                                            <option>Dehradun</option>
+                                            <option>Haridwar</option>
+                                            <option> Roorkee</option>
+                                            <option>Kotdwar</option>
+                                            <option>Rishikesh</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="date" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Listing -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Corporate Events -->
+                <div class="col-12 mb-4">
+                    <h3 class="fw-bold mb-4">Corporate Events</h3>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <div class="badge bg-primary event-badge">Featured</div>
+                        <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" class="card-img-top" alt="Business Leadership Summit">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">JUN</span>
+                            </div>
+                            <h5 class="card-title">Business Leadership Summit</h5>
+                            <p class="card-text">A transformative day of networking, learning, and innovation with industry leaders.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Grand Plaza Hotel</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>9:00 AM - 5:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹2999 <small class="text-muted fw-normal text-decoration-line-through">$249</small></p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=business-summit" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg" class="card-img-top" alt="Tech Conference">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">28</span>
+                                <span class="month">JUN</span>
+                            </div>
+                            <h5 class="card-title">Tech Innovation Conference</h5>
+                            <p class="card-text">Explore the latest innovations in technology and digital transformation strategies.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Tech Hub Center</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>10:00 AM - 6:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹599</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=tech-conference" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" class="card-img-top" alt="Networking Mixer">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">10</span>
+                                <span class="month">JUL</span>
+                            </div>
+                            <h5 class="card-title">Professional Networking Mixer</h5>
+                            <p class="card-text">Build valuable connections with professionals from various industries in a relaxed setting.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Skyline Lounge</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>6:00 PM - 9:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹899</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=networking-mixer" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weddings & Celebrations -->
+                <div class="col-12 my-4">
+                    <h3 class="fw-bold mb-4">Weddings & Celebrations</h3>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <div class="badge bg-primary event-badge">Featured</div>
+                        <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg" class="card-img-top" alt="Wedding Showcase">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">JUL</span>
+                            </div>
+                            <h5 class="card-title">Dream Wedding Showcase</h5>
+                            <p class="card-text">Explore wedding trends, meet vendors, and plan your perfect ceremony and reception.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Riverside Gardens</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>11:00 AM - 8:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹399 <small class="text-muted fw-normal text-decoration-line-through">$40</small></p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=wedding-showcase" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://executiveleader.com/wp-content/uploads/2021/11/MicrosoftTeams-image-2-1-scaled.jpg" class="card-img-top" alt="Engagement Planning Workshop">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <h5 class="card-title">Engagement Planning Workshop</h5>
+                            <p class="card-text">Learn how to plan the perfect proposal and engagement celebration with our expert planners.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Harmony Events Center</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>1:00 PM - 4:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹799</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=engagement-workshop" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg" class="card-img-top" alt="Anniversary Package">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">18</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <h5 class="card-title">Anniversary Celebration Package</h5>
+                            <p class="card-text">Special all-inclusive anniversary celebration packages for couples marking their special milestones.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Harbor View Restaurant</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>7:00 PM - 11:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹3599</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=anniversary-package" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Festivals & Entertainment -->
+                <div class="col-12 my-4">
+                    <h3 class="fw-bold mb-4">Festivals & Entertainment</h3>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <div class="badge bg-primary event-badge">Featured</div>
+                        <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg" class="card-img-top" alt="Summer Music Festival">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <h5 class="card-title">Summer Music Festival</h5>
+                            <p class="card-text">A vibrant celebration with live performances, food vendors, and entertainment for all ages.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Central Park Amphitheater</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>3:00 PM - 11:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹699 <small class="text-muted fw-normal text-decoration-line-through">$120</small></p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=music-festival" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg" class="card-img-top" alt="Food & Wine Festival">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">19</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <h5 class="card-title">Culinary & Wine Festival</h5>
+                            <p class="card-text">Savor delicious cuisine and fine wines from renowned chefs and vineyards across the region.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Riverfront Plaza</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>12:00 PM - 8:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹499</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=food-wine-festival" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg" class="card-img-top" alt="Art Exhibition">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">12</span>
+                                <span class="month">SEP</span>
+                            </div>
+                            <h5 class="card-title">Contemporary Art Exhibition</h5>
+                            <p class="card-text">Discover thought-provoking works from emerging and established artists in this special exhibition.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Modern Gallery</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>10:00 AM - 7:00 PM</p>
+                            <p class="text-primary fw-bold mt-3">₹999</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=art-exhibition" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Newsletter Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Get Updates on New Events</h3>
+                    <p class="mb-4">Subscribe to our newsletter to be the first to know about upcoming events, early bird specials, and exclusive offers.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">About Eventify</h5>
+                    <p>Creating memorable experiences through professional event planning and management services.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="events.html" class="footer-link">Events</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="index.html#about" class="footer-link">About</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Corporate Events</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Wedding Planning</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Birthday Parties</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Social Gatherings</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Conferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Eventify. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link me-3">Terms of Service</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Event Management Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/eventlogo.png" alt="Eventify Logo" width="45" height="45" class="me-2">
+                <span class="fw-bold">Event<span class="text-primary">ify</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-lg-3 px-3" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg')">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Create Unforgettable Events</h1>
+                    <p class="lead">Let us handle every detail while you enjoy the moment</p>
+                    <a href="events.html" class="btn btn-primary btn-lg mt-3">Explore Events</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg')">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Corporate Events Excellence</h1>
+                    <p class="lead">Professional planning for your business gatherings</p>
+                    <a href="events.html" class="btn btn-primary btn-lg mt-3">Book Now</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg')">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Magical Weddings</h1>
+                    <p class="lead">Turning your special day into an extraordinary experience</p>
+                    <a href="events.html" class="btn btn-primary btn-lg mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Featured Events Section -->
+    <section id="featured-events" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">Upcoming Events</h2>
+                    <p class="text-muted lead">Discover and book your next incredible experience</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" class="card-img-top" alt="Corporate Summit">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">JUN</span>
+                            </div>
+                            <h5 class="card-title">Business Leadership Summit</h5>
+                            <p class="card-text">A transformative day of networking, learning, and innovation with industry leaders.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Grand Plaza Hotel</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>9:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=business-summit" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg" class="card-img-top" alt="Wedding Celebration">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">JUL</span>
+                            </div>
+                            <h5 class="card-title">Dream Wedding Showcase</h5>
+                            <p class="card-text">Explore wedding trends, meet vendors, and plan your perfect ceremony and reception.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Riverside Gardens</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>11:00 AM - 8:00 PM</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=wedding-showcase" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100">
+                        <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg" class="card-img-top" alt="Birthday Bash">
+                        <div class="card-body">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <h5 class="card-title">Summer Music Festival</h5>
+                            <p class="card-text">A vibrant celebration with live performances, food vendors, and entertainment for all ages.</p>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt me-2"></i>Central Park Amphitheater</p>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>3:00 PM - 11:00 PM</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="book.html?event=music-festival" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="events.html" class="btn btn-primary">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">Our Services</h2>
+                    <p class="text-muted lead">Comprehensive event solutions tailored to your needs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h5 class="card-title">Venue Selection</h5>
+                            <p class="card-text">We partner with the finest venues to provide the perfect setting for your event, from intimate gatherings to grand celebrations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h5 class="card-title">Catering Excellence</h5>
+                            <p class="card-text">Delicious food and beverage options for all tastes and dietary requirements, serving unforgettable culinary experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h5 class="card-title">Theme & Decoration</h5>
+                            <p class="card-text">Creating stunning visual environments that match your vision and theme, transforming spaces into memorable experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" class="img-fluid rounded-3 shadow" alt="About Eventify">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">About Eventify</h2>
+                    <p class="lead">We're passionate about creating exceptional events that leave lasting impressions.</p>
+                    <p>With over 10 years of experience in the event management industry, our team of dedicated professionals brings creativity, precision, and expertise to every project we undertake.</p>
+                    <p>From concept to execution, we handle every detail with meticulous care, ensuring your event exceeds expectations and achieves its goals.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <h3 class="fw-bold text-primary mb-1">500+</h3>
+                            <p class="text-muted">Events Managed</p>
+                        </div>
+                        <div class="me-4">
+                            <h3 class="fw-bold text-primary mb-1">50+</h3>
+                            <p class="text-muted">Premium Venues</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-bold text-primary mb-1">98%</h3>
+                            <p class="text-muted">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">What Our Clients Say</h2>
+                    <p class="text-muted lead">Hear from those who've experienced our services</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Eventify transformed our corporate retreat into an unforgettable experience. Every detail was handled with precision and care."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="50" alt="Client">
+                                <div>
+                                    <h6 class="mb-0">Sarah</h6>
+                                    <small class="text-muted">Marketing Director, TechCorp</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Our wedding day was absolutely perfect thanks to Eventify. They took all the stress away and delivered beyond our expectations."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/44.jpg" class="rounded-circle me-3" width="50" alt="Client">
+                                <div>
+                                    <h6 class="mb-0">Jacky</h6>
+                                    <small class="text-muted">Newlyweds</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The product launch event organized by Eventify was spectacular. The attention to detail and execution helped us make a powerful market entry."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" class="rounded-circle me-3" width="50" alt="Client">
+                                <div>
+                                    <h6 class="mb-0">Tiger</h6>
+                                    <small class="text-muted">CEO, Innovate Labs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead mb-4">Have questions about our services or need a custom quote? Reach out to us!</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Address</h6>
+                            <p class="mb-0">Prem Nagar,Dehradun</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Phone</h6>
+                            <p class="mb-0">(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Email</h6>
+                            <p class="mb-0">info@eventify.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4">Send us a message</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">About Eventify</h5>
+                    <p>Creating memorable experiences through professional event planning and management services.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="events.html" class="footer-link">Events</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+                        <li class="mb-2"><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Corporate Events</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Wedding Planning</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Birthday Parties</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Social Gatherings</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Conferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Eventify. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link me-3">Terms of Service</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

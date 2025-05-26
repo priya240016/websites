@@ -1,0 +1,430 @@
+/* Base Styles & Variables */
+:root {
+    --primary-color: #1f39bb;
+    --primary-dark: #ff5252;
+    --primary-light: #ff8a8a;
+    --secondary-color: #4ecdc4;
+    --dark-color: #292f36;
+    --light-color: #f7fff7;
+    --accent-color: #ffd166;
+    --gray-light: #f8f9fa;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    
+    --transition: all 0.3s ease;
+    --border-radius: 0.5rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Navigation */
+.navbar {
+    transition: var(--transition);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    font-size: 1.8rem;
+}
+
+/* Hero Carousel */
+.carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Event Cards */
+.event-card {
+    transition: var(--transition);
+    border: none;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.event-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-date {
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.2;
+    transform: translateY(-50%);
+    box-shadow: var(--shadow-sm);
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.event-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+/* Service Cards */
+.service-card {
+    transition: var(--transition);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    background-color: rgba(255, 107, 107, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+/* Contact Section */
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    background-color: rgba(255, 107, 107, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Events Page Styles */
+.events-header {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Booking Page Styles */
+.booking-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray-light);
+    border: 2px solid var(--gray);
+    color: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.step-text {
+    font-size: 0.85rem;
+    color: var(--gray);
+    transition: var(--transition);
+}
+
+.step-connector {
+    flex: 1;
+    height: 2px;
+    background-color: var(--gray);
+    margin: 0 10px;
+    position: relative;
+    top: 20px;
+    z-index: 0;
+}
+
+.step.active .step-icon {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.step.active .step-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Booking Confirmation */
+.confirmation-icon {
+    font-size: 5rem;
+    color: #28a745;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: rgba(255, 107, 107, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Register Page */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: 50vh;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    
+    .booking-steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .step {
+        margin-bottom: 1rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .step-icon {
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    .step-connector {
+        width: 2px;
+        height: 20px;
+        margin: 10px 0;
+        margin-left: 20px;
+    }
+    
+    .event-date {
+        top: 170px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-item {
+        height: 70vh;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption .btn {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.carousel-caption h1 {
+    animation-delay: 0.2s;
+}
+
+.carousel-caption p {
+    animation-delay: 0.4s;
+}
+
+.carousel-caption .btn {
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+/* Additional Hover Effects */
+.service-card:hover .service-icon,
+.event-card:hover .event-badge {
+    transform: scale(1.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
